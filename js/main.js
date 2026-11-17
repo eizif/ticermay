@@ -1,62 +1,17 @@
-document.addEventListener('DOMContentLoaded', () => {
-  // Footer year
-  const y = document.getElementById('year');
+// Content is fully visible without this file. It only adds the current year
+// and a gentle fade-in for sections as they scroll into view.
+(function () {
+  var y = document.querySelector('[data-year]');
   if (y) y.textContent = new Date().getFullYear();
 
-  // Mobile menu toggle (accessible)
-  const toggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.navbar nav');
+  if (!('IntersectionObserver' in window)) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-  if (toggle && nav) {
-    const close = () => {
-      nav.classList.remove('show');
-      toggle.setAttribute('aria-expanded', 'false');
-    };
-    const open = () => {
-      nav.classList.add('show');
-      toggle.setAttribute('aria-expanded', 'true');
-    };
-    const toggleMenu = (e) => {
-      e?.stopPropagation?.();
-      nav.classList.contains('show') ? close() : open();
-    };
-
-    // init ARIA
-    toggle.setAttribute('aria-controls', 'primary-nav');
-    nav.id = 'primary-nav';
-    toggle.setAttribute('aria-expanded', 'false');
-
-    // Click toggle
-    toggle.addEventListener('click', toggleMenu);
-
-    // Keyboard (Enter/Space)
-    toggle.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        toggleMenu(e);
-      }
+  document.documentElement.classList.add('js');
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
     });
-
-    // Close on link click
-    nav.querySelectorAll('a').forEach((a) => a.addEventListener('click', close));
-
-    // Click outside
-    document.addEventListener('click', (e) => {
-      if (nav.classList.contains('show') && !nav.contains(e.target) && !toggle.contains(e.target)) close();
-    });
-
-    // Esc to close
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
-
-    // Reset on resize to desktop
-    let resizeTimer;
-    window.addEventListener('resize', () => {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(() => {
-        if (window.innerWidth > 760) close();
-      }, 100);
-    });
-  }
-
-  console.log('Site ready ✅');
-});
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.rise').forEach(function (el) { io.observe(el); });
+})();
