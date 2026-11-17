@@ -1,160 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pricing · May</title>
-  <meta name="description" content="Flexible babysitting pricing by Siti Maisarah — simple hourly rate and transparent add-ons.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rates 2026 — Ticer May, Babysitter in Selangor</title>
+  <meta name="description" content="Babysitting rates in Selangor: RM25/hour at home, RM28/hour outdoor, RM300/day stay-in or travel. Clear add-ons and a RM50 deposit.">
+  <link rel="canonical" href="https://ticermay.com/pricing.html">
+  <meta name="theme-color" content="#f8f3ea">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ticer May">
+  <meta property="og:title" content="Rates 2026 — Ticer May, Babysitter in Selangor">
+  <meta property="og:description" content="Babysitting rates in Selangor: RM25/hour at home, RM28/hour outdoor, RM300/day stay-in or travel. Clear add-ons and a RM50 deposit.">
+  <meta property="og:url" content="https://ticermay.com/pricing.html">
+  <meta property="og:image" content="https://ticermay.com/assets/profile.jpeg">
   <link rel="icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&display=swap" rel="stylesheet">
   <script defer src="js/main.js"></script>
-
-  <style>
-    body { font-family: 'Baloo 2', -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif; }
-
-    h1 {
-      font-size: clamp(1.8rem, 5vw, 2.6rem);
-      color: #ff2e85;
-      font-family: 'Baloo 2', sans-serif;
-    }
-
-    /* Desktop: 3 columns, center last row */
-    .pricing {
-      display: grid;
-      gap: 1rem;
-      grid-template-columns: repeat(3, minmax(240px, 1fr));
-      justify-content: center;
-    }
-    .pricing::after {
-      content: "";
-      grid-column: span 1;
-    }
-
-    .price-card {
-      background: linear-gradient(180deg, #fff, #fff5fa);
-      border-radius: 18px;
-      text-align: center;
-      padding: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      transition: transform .25s ease, box-shadow .25s ease;
-      box-shadow: 0 2px 8px rgba(255,46,133,.05);
-    }
-    .price-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 20px rgba(255,46,133,.15);
-    }
-
-    .price {
-      font-size: 1.4rem;
-      font-weight: 800;
-      color: #111827;
-      margin: .3rem 0;
-    }
-    .muted { color: #6b7280; font-size: .95rem; }
-
-    .terms {
-      margin-top: 1.2rem;
-      padding: 1.2rem;
-    }
-    .terms h3 { margin: 0; }
-    .terms ul { margin-top: .7rem; }
-
-    @media (max-width: 980px) {
-      .pricing { grid-template-columns: repeat(2, minmax(240px, 1fr)); }
-      .pricing::after { display: none; }
-    }
-
-    @media (max-width: 760px){
-      .pricing { grid-template-columns: 1fr; }
-      .price-card { padding: 1.2rem; }
-      .pricing::after { display: none; }
-    }
-  </style>
 </head>
-
 <body>
-  <header class="navbar glass">
-    <div class="brand">May</div>
-    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="experience.html">Experience</a>
-      <a href="overseas.html">Overseas</a>
-      <a href="pricing.html" aria-current="page">Pricing</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="wordmark" href="index.html">Ticer <b>May</b></a>
+      <nav class="site-nav" aria-label="Main"><a href="index.html">Home</a><a href="experience.html">Experience</a><a href="overseas.html">Overseas</a><a href="pricing.html" aria-current="page">Rates</a><a href="contact.html">Book</a></nav>
+    </div>
   </header>
 
-  <main class="container">
-    <section class="card fade">
-      <h1>Rate for 2026 🌸</h1>
-      <p class="muted" style="margin-bottom:1.4rem;">
-        Simple & transparent pricing — based on session type and add-ons.
-      </p>
-
-      <div class="pricing">
-        <div class="price-card">
-          <h3>Normal Babysit 🏡</h3>
-          <p class="price">RM 23 / hour</p>
-          <p class="muted">At home / hospital / hotel</p>
-        </div>
-
-        <div class="price-card">
-          <h3>Outdoor Babysit 🎡</h3>
-          <p class="price">RM 26 / hour</p>
-          <p class="muted">Indoor playground / event space</p>
-        </div>
-
-        <div class="price-card">
-          <h3>Stay-in / Travel 🌙✈️</h3>
-          <p class="price">RM 300 / day</p>
-          <p class="muted">Overnight care or travel sessions</p>
-        </div>
-
-        <div class="price-card">
-          <h3>Last Minute ⏰</h3>
-          <p class="price">+ RM 50</p>
-          <p class="muted">Booking less than 12 hours</p>
-        </div>
-
-        <div class="price-card">
-          <h3>Activities 🎨</h3>
-          <p class="price">+ RM 5 / hour</p>
-          <p class="muted">Messy play / 3M / practical life</p>
-        </div>
-
-        <div class="price-card">
-          <h3>Transportation Fee 🚗</h3>
-          <p class="price">RM 0.50 / km</p>
-          <p class="muted">Charged one-way only</p>
-        </div>
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap">
+        <h1>Rates for 2026</h1>
+        <p>All prices are for one child.</p>
       </div>
-
-      <div class="card terms">
-        <h3>Notes</h3>
-        <ul class="list">
-          <li>All prices stated above are for <b>one child</b> only.</li>
-          <li>Each additional child will be charged <b>RM 12 / hour</b>.</li>
-          <li>
-            <b>A RM 50 deposit is required to secure the booking.</b><br>
-            Refundable only if cancelled at least <b>24 hours</b> in advance.
-          </li>
-        </ul>
-      </div>
-
-      <p class="muted" style="text-align:center; margin-top:1.6rem;">
-        Ready to book? Go to the
-        <a href="contact.html" style="color:#ff2e85;">Contact</a>
-        page to WhatsApp May.
-      </p>
     </section>
+    <section class="section" style="padding-top:0">
+      <div class="wrap split rates-page">
+        <div class="rate-card">
+          <h3>Sessions</h3>
+          <ul class="rates"><li><div class="rate-line"><span class="name">Normal babysit</span><span class="dots" aria-hidden="true"></span><span class="price">RM 25 / hour</span></div><span class="note">At home, hospital or hotel</span></li><li><div class="rate-line"><span class="name">Outdoor babysit</span><span class="dots" aria-hidden="true"></span><span class="price">RM 28 / hour</span></div><span class="note">Indoor playground or event space</span></li><li><div class="rate-line"><span class="name">Stay-in or travel</span><span class="dots" aria-hidden="true"></span><span class="price">RM 300 / day</span></div><span class="note">Overnight care or trips</span></li></ul>
+          <h3>Add-ons</h3>
+          <ul class="rates"><li><div class="rate-line"><span class="name">Extra child</span><span class="dots" aria-hidden="true"></span><span class="price">+ RM 12 / hour</span></div></li><li><div class="rate-line"><span class="name">Activities</span><span class="dots" aria-hidden="true"></span><span class="price">+ RM 5 / hour</span></div><span class="note">Messy play, 3M, practical life</span></li><li><div class="rate-line"><span class="name">Last-minute booking</span><span class="dots" aria-hidden="true"></span><span class="price">+ RM 50</span></div><span class="note">Less than 12 hours' notice</span></li><li><div class="rate-line"><span class="name">Transport</span><span class="dots" aria-hidden="true"></span><span class="price">RM 0.60 / km</span></div><span class="note">Charged one way only</span></li></ul>
+        </div>
+        <div>
+          <h2 style="font-size:var(--text-xl); margin-bottom:var(--space-md)">Booking terms</h2>
+          <ul class="checklist">
+            <li>A RM 50 deposit secures your booking.</li>
+            <li>The deposit is refunded if you cancel at least 24 hours before.</li>
+            <li>Rates are for one child. Each extra child is RM 12 an hour.</li>
+          </ul>
+          <div class="actions"><a class="btn" href="https://wa.me/601128990158?text=Hi%20May%21%20I%27d%20like%20to%20book%20a%20babysitter.%0A%0ADate%3A%0ATime%3A%0ANo.%20of%20children%20%26%20ages%3A%0ALocation%3A%0ANotes%20%28allergies%20/%20special%20needs%29%3A" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill-rule="evenodd" d="M19.11 17.14c-.27-.13-1.6-.79-1.85-.88-.25-.09-.43-.13-.62.13-.19.26-.71.88-.87 1.06-.16.18-.32.2-.6.07-.27-.13-1.14-.42-2.17-1.34-.8-.71-1.34-1.58-1.5-1.85-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.13-.16.18-.26.27-.45.09-.19.04-.35-.02-.48-.07-.13-.62-1.49-.85-2.04-.22-.53-.45-.46-.62-.47l-.53-.01c-.18 0-.47.07-.72.35-.25.26-.95.93-.95 2.26s.97 2.62 1.1 2.8c.13.18 1.9 3 4.6 4.2.64.28 1.14.45 1.53.58.64.2 1.22.17 1.68.1.51-.08 1.6-.65 1.83-1.27.23-.62.23-1.15.16-1.27-.07-.11-.25-.18-.52-.31zM16.02 28c-2.09 0-4.14-.56-5.93-1.62L6 28l1.68-3.98A11.9 11.9 0 0 1 4 16.02C4 9.38 9.38 4 16.02 4A11.95 11.95 0 0 1 28 16.02C28 22.66 22.62 28 16.02 28zm0-21.6c-5.43 0-9.86 4.43-9.86 9.86 0 1.94.57 3.75 1.56 5.27l-.99 2.88 2.98-.94a9.8 9.8 0 0 0 6.31 2.16c5.43 0 9.86-4.43 9.86-9.86s-4.43-9.86-9.86-9.86z"/></svg>Book on WhatsApp</a></div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> May · Seri Kembangan, Selangor</p>
+  <footer class="site-foot">
+    <div class="wrap">
+      <span>© <span data-year>2026</span> Siti Maisarah, Selangor</span>
+      <nav aria-label="Footer"><a href="index.html">Home</a><a href="experience.html">Experience</a><a href="overseas.html">Overseas</a><a href="pricing.html" aria-current="page">Rates</a><a href="contact.html">Book</a></nav>
+    </div>
   </footer>
+  <a class="wa-float" href="https://wa.me/601128990158?text=Hi%20May%21%20I%27d%20like%20to%20book%20a%20babysitter.%0A%0ADate%3A%0ATime%3A%0ANo.%20of%20children%20%26%20ages%3A%0ALocation%3A%0ANotes%20%28allergies%20/%20special%20needs%29%3A" target="_blank" rel="noopener" aria-label="Book May on WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill-rule="evenodd" d="M19.11 17.14c-.27-.13-1.6-.79-1.85-.88-.25-.09-.43-.13-.62.13-.19.26-.71.88-.87 1.06-.16.18-.32.2-.6.07-.27-.13-1.14-.42-2.17-1.34-.8-.71-1.34-1.58-1.5-1.85-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.13-.16.18-.26.27-.45.09-.19.04-.35-.02-.48-.07-.13-.62-1.49-.85-2.04-.22-.53-.45-.46-.62-.47l-.53-.01c-.18 0-.47.07-.72.35-.25.26-.95.93-.95 2.26s.97 2.62 1.1 2.8c.13.18 1.9 3 4.6 4.2.64.28 1.14.45 1.53.58.64.2 1.22.17 1.68.1.51-.08 1.6-.65 1.83-1.27.23-.62.23-1.15.16-1.27-.07-.11-.25-.18-.52-.31zM16.02 28c-2.09 0-4.14-.56-5.93-1.62L6 28l1.68-3.98A11.9 11.9 0 0 1 4 16.02C4 9.38 9.38 4 16.02 4A11.95 11.95 0 0 1 28 16.02C28 22.66 22.62 28 16.02 28zm0-21.6c-5.43 0-9.86 4.43-9.86 9.86 0 1.94.57 3.75 1.56 5.27l-.99 2.88 2.98-.94a9.8 9.8 0 0 0 6.31 2.16c5.43 0 9.86-4.43 9.86-9.86s-4.43-9.86-9.86-9.86z"/></svg></a>
 </body>
 </html>
